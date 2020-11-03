@@ -10,7 +10,7 @@
                 Số thứ nhất
             </div>
             <div class="col-5">
-                <input type="text" class="form-control" id="firstNumber" onblur="checkFunction()" value={{firstNumber}}>
+                <input type="text" name="firstNumber" class="form-control" id="firstNumber" onblur="checkFunction()" value="{{firstNumber}}">
             </div>
             <div class="col-2 form-check">
                 <input type="radio" class="form-check-input" name="operation" id="add" value="add">
@@ -26,7 +26,7 @@
                 Số thứ hai
             </div>
             <div class="col-5">
-                <input type="text" class="form-control" id="secondNumber" onblur="checkFunction()" value={{secondNumber}}>
+                <input type="text" name="secondNumber" class="form-control" id="secondNumber" onblur="checkFunction()" value="{{secondNumber}}">
             </div>
             <div class="col-2 form-check">
                 <input type="radio" class="form-check-input" name="operation" id="multiple" value="multiple">
@@ -42,7 +42,7 @@
                 Kết quả
             </div>
             <div class="col-5">
-                <input type="text" class="form-control" id="result" value={{result}}>
+                <input type="text" class="form-control" id="result" name="result" value="{{result}}">
             </div>
             <div class="col-4">
                 <button type="submit" class="btn btn-primary">Tính</button>
