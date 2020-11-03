@@ -7,8 +7,8 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', (req, res)=> {
-  const firstNumber = parseFloat(req.body.firstNumber;
-  const secondNumber = parseFloat(req.body.secondNumber;
+  const firstNumber = parseFloat(req.body.firstNumber);
+  const secondNumber = parseFloat(req.body.secondNumber);
   const operators = req.body.operation;
   let result;
   for (let i = 0; i < operators.length; i++) {
