@@ -7,9 +7,9 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', (req, res)=> {
-  const firstNumber = parseFloat(req.document.getElementById('firstNumber').value);
-  const secondNumber = parseFloat(req.document.getElementById('secondNumber').value);
-  const operators = req.document.getElementsByName('operation');
+  const firstNumber = parseFloat(req.body.firstNumber;
+  const secondNumber = parseFloat(req.body.secondNumber;
+  const operators = req.body.operation;
   let result;
   for (let i = 0; i < operators.length; i++) {
     if (operators[i].checked) {
