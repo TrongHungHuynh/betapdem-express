@@ -1,5 +1,5 @@
 <div class="container">
-    <form>
+    <form method="post" onsubmit="checkOperator()">
         <div class="row mt-4 mb-5">
             <div class="col">
                 <h2>Bé tập tính</h2>
@@ -10,7 +10,7 @@
                 Số thứ nhất
             </div>
             <div class="col-5">
-                <input type="text" class="form-control" id="firstNumber" onblur="checkFunction()">
+                <input type="text" class="form-control" id="firstNumber" onblur="checkFunction()" value="{{firstNumber}}">
             </div>
             <div class="col-2 form-check">
                 <input type="radio" class="form-check-input" name="operation" id="add" value="add">
@@ -26,7 +26,7 @@
                 Số thứ hai
             </div>
             <div class="col-5">
-                <input type="text" class="form-control" id="secondNumber" onblur="checkFunction()">
+                <input type="text" class="form-control" id="secondNumber" onblur="checkFunction()" value="{{secondNumber}}">
             </div>
             <div class="col-2 form-check">
                 <input type="radio" class="form-check-input" name="operation" id="multiple" value="multiple">
@@ -43,10 +43,10 @@
             Kết quả
         </div>
         <div class="col-5">
-            <form type="text" class="form-control" id="result"></form>
+            <form type="text" class="form-control" id="result">{{result}}</form>
         </div>
         <div class="col-4">
-            <button type="submit" class="btn btn-primary" onclick="calculate()">Tính</button>
+            <button type="submit" class="btn btn-primary">Tính</button>
         </div>
     </div>
     <div class="row mt-3">
