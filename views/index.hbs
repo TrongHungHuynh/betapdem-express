@@ -1,5 +1,5 @@
 <div class="container">
-    <form method="post" onsubmit="return checkOperator()">
+    <form method="post" onsubmit="return checkOperator();">
         <div class="row mt-4 mb-5">
             <div class="col">
                 <h2>Bé tập tính</h2>
@@ -37,24 +37,24 @@
                 <label class="form-check-label" for="divide">Chia</label>
             </div>
         </div>
+        <div class="row mt-3">
+            <div class="col-3">
+                Kết quả
+            </div>
+            <div class="col-5">
+                <form type="text" class="form-control" id="result">{{result}}</form>
+            </div>
+            <div class="col-4">
+                <button type="submit" class="btn btn-primary">Tính</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-3">
+                Thông báo
+            </div>
+            <div class="col-9">
+                <p class="text-danger" id="warning"></p>
+            </div>
+        </div>
     </form>
-    <div class="row mt-3">
-        <div class="col-3">
-            Kết quả
-        </div>
-        <div class="col-5">
-            <form type="text" class="form-control" id="result">{{result}}</form>
-        </div>
-        <div class="col-4">
-            <button type="submit" class="btn btn-primary">Tính</button>
-        </div>
-    </div>
-    <div class="row mt-3">
-        <div class="col-3">
-            Thông báo
-        </div>
-        <div class="col-9">
-            <p class="text-danger" id="warning"></p>
-        </div>
-    </div>
 </div>
